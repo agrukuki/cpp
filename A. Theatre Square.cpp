@@ -1,21 +1,9 @@
 #include <bits/stdc++.h>
 #define ll long long
+#define ld long double
 using namespace std;
-ll n,m,a;
-void Enter() {
-    cin >> n >> m >> a;
-}
-void Solve() {
-    if (2*(n+m-a) % a == 0) {
-        cout << 2*(n+m-a) / a;
-    } else {
-        cout << 2*(n+m-a) / a + 1;
-    }
-}
+ld n,m,a;
 int main() {
-    Enter();
-    Solve();
+    cin >> n >> m >> a;
+    cout << (ll)ceil(n/a)*(ll)ceil(m/a);
 }
-
-
-
